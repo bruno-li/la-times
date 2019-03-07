@@ -35,15 +35,27 @@
     }
     // AUTHOR NAME
     &__author{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         &__name{
             font-family:Helvetica, sans-serif;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 12px;
             font-weight: 700;
             letter-spacing: 1px;
             color: #333;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             margin: 2rem 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+        }
+        // SOCIAL MEDIA ICONS
+        &__social-media{
+            width: 127px;
+            height: 100%;
+            padding: 1.2rem 0;
             border-top: 1px solid #ccc;
             border-bottom: 1px solid #ccc;
         }

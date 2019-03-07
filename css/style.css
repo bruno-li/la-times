@@ -111,17 +111,28 @@ body {
       line-height: 48px;
       font-weight: 500;
       color: #000; }
-    .main-container .main-content__author__name {
-      font-family: Helvetica, sans-serif;
-      font-size: 12px;
-      line-height: 12px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: #333;
-      padding: 1rem 0;
-      margin: 2rem 0;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc; }
+    .main-container .main-content__author {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .main-container .main-content__author__name {
+        font-family: Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #333;
+        padding: 1.5rem 0;
+        margin: 2rem 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        width: 100%; }
+      .main-container .main-content__author__social-media {
+        width: 127px;
+        height: 100%;
+        padding: 1.2rem 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc; }
     .main-container .main-content__figure__img {
       width: 100%; }
     .main-container .main-content__figure__caption {

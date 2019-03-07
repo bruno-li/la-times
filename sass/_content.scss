@@ -1,128 +1,79 @@
 .main-container {
     margin: 0 auto;
     width: 90%;
-// HEADER
-.header {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-
-    &__container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__links {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 18px;
-
-        &__list {
-            font-family: 'Playfair Display', sans-serif;
-            font-size: 18px;
-            line-height: 13px;
-            font-weight: 700;
-            margin: 0 13px;
-            color: $color-primary-green;
-
-            &__text {
-                color: $color-primary-green;
-                text-decoration: none;
-                &:hover {
-                    color: #0f7bae;
-                }
-            }
-            &:first-child {
-                list-style: none;
-            }
-        }
-    }
-    // TITLE
-    &__heading {
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 42px;
-        text-align: center;
-        margin: 0 0 18px 0;
-        color: #111;
-        // MEDIA QURIES
-        @include respond(small-phone){
-            font-size: 38px;
-        }
-    }
-
-    &__social-media {
-        display: flex;
-        justify-content: center;
-
-        &__icons {
-            width: 20%;
-            height: 100%;
-        }
-    }
-}
-
-.figure__header {
-    max-width: 850px;
-    margin: 20px auto;
-    &__image {
-        max-width: 100%;
-    }
-    &__caption {
-        font-family: sans-serif;
-        font-size: 9px;
-        line-height: 12px;
-        margin: 5px 1px;
-        color: #a3a5a9;
-
-    }
-}
 
 ////////// MAIN CONTENT ////////////
 .main-content {
-    margin: 20px auto;
-    max-width: 780px;
-
-    &__author-photo {
-        width: 260px;
-        margin-left: 22px;
-    }
-
-    &__paragraph {
-        font-family: "Rasa", sans-serif;
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 300;
-        margin: 20px;
-        color: #111;
-    }
-}
-
-.movie-title {
-    &__heading {
-        font-family: 'Playfair Display', sans-serif;
-        font-style: italic;
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        margin-left: 20px;
-        color: $color-primary-black;
-        ///// MEDIA QUERIES ///////
-        @include respond(small-phone) {
-            font-size: 18px;         
+    margin: 3rem auto;
+    max-width: 1080px;
+    &__link{
+        display: flex;
+        margin-bottom: 2rem;
+        list-style: none;
+        &__list{
+            font-family:Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            color: #fff;
+            padding: 6px 10px;
+            line-height: 11px;
+            text-transform: uppercase;
+            margin: 0 10px;
+            letter-spacing: 1px;
+            &:first-child{
+                background-color: #333;
+            }   
+            background-color: rgba(51,51,51,.5);
         }
     }
-    span {
-        display: block;
-        margin-bottom: 20px;
-        margin-left: 20px;
-        font-family: "Rasa", sans-serif;
-        font-size: 20px;
-        line-height: 30px;
+    // TITLE
+    &__heading{
+        font-size: 44px;
+        line-height: 48px;
+        font-weight: 500;
+        color: #000;
     }
-    &__img {
-        width: 100%;
+    // AUTHOR NAME
+    &__author{
+        &__name{
+            font-family:Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #333;
+            padding: 1rem 0;
+            margin: 2rem 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
     }
-}
+    // IMAGES
+    &__figure{
+        &__img{
+            width: 100%;
+        }
+        &__caption{
+            font-size: 13px;
+            line-height: 16px;
+            margin: 5px 0;
+            color: #333;
+        }
+    }
+    // SUB HEADINGS
+    &__sub-heading{
+        font-size: 27px;
+        line-height: 28px;
+        margin-top: 1.5rem;
+        color: #000;
+    }
+    // PARAGRAPHS
+    &__paragraph {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 19px;
+        line-height: 26px;
+        margin: 20px 0;
+        color: #000;
+    }
+ }
 }

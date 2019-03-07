@@ -1,31 +1,77 @@
 .footer{
-    display: flex;
-    flex-direction: column;
-    margin: 2rem auto;
-    border-top: 1px solid #9A9A9A;
- 
-    .figure {
-        margin: 0 auto;
-        &__logo{
-            display: block;
-            width: 240px;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+ &__wrapper{
+     display: flex;
+     justify-content: space-around;
+     max-width: 1300px;
+     padding: 5rem 0;
+     margin: 0 auto;
+     background-color: #333;
+     &__figure{
+        &:hover{
+            cursor: pointer;
         }
-        &__social{
-            width: 235px;
-            margin-bottom: 2rem;
+         &__logo{
+            width: 130px;
+         }
+     }
+
+    //  SIGN UP
+    &__signup{
+        list-style: none;
+        color: #fff;
+        &__list{
+            font-family:  'Times New Roman', Times, serif,sans-serif;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: .5px;
+            margin-top: 1rem;
+            &:hover{
+                cursor: pointer;
+            }
+            &--border{
+                text-decoration: underline;
+            }
+        }
+
+        &__social-media{
+            &__icons{
+                margin-top: 3rem;
+                width: 200px;
+            }
         }
     }
+    // LEFT LINKS
+    &__left-links{
+        list-style: none;
+        color: #fff;
+        &__list{
+            font-family: "Helvetica", sans-serif;
+            font-size: 12px;
+            margin-top: 1rem;
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+                color: #999;
+            }
 
-    .copyright{
-        width: 60%;
-        margin: 1rem auto;
-        font-family: sans-serif;
-        text-align: center;
-        font-size: 10px;
-        line-height: 20px;
-        color: #8b8d91;
-
+        }
     }
+    // RIGHT LINKS
+    &__right-links{
+        list-style: none;
+        color: #fff;
+        &__list{
+            font-family: "Helvetica", sans-serif;
+            font-size: 12px;
+            margin-top: 1rem;
+
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+                color: #999;
+            }
+        }
+    }
+ }
 }

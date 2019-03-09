@@ -6,6 +6,10 @@
 .main-content {
     margin: 3rem auto;
     max-width: 1080px;
+    // MEDIA QUERIES
+    @include respond(small-phone){
+        margin: 4rem auto;
+    }
     &__link{
         display: flex;
         margin-bottom: 2rem;
@@ -32,6 +36,11 @@
         line-height: 48px;
         font-weight: 500;
         color: #000;
+        // MEDIA QUERIES
+        @include respond(small-phone){
+            font-size: 30px;
+            line-height: 38px;
+        }
     }
     // AUTHOR NAME
     &__author{
@@ -58,6 +67,10 @@
             padding: 1.2rem 0;
             border-top: 1px solid #ccc;
             border-bottom: 1px solid #ccc;
+            // MEDIA QUERIES
+            @include respond(tab-port){
+                padding: 25px 0;
+            }
         }
     }
     // IMAGES
